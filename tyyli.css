@@ -72,10 +72,10 @@ nav a:hover {
 
 /*kuvat*/
 figure {
-    border: 10px #cccccc solid;
+   /* border: 10px #cccccc solid; */
     margin: auto;
     margin-bottom: 0px;
-    max-width: 400px;
+    max-width: 300px;
 }
 figcaption {
     background-color: darkslategray;
@@ -87,7 +87,7 @@ figcaption {
 .kuva {
     max-width: 650px;
     vertical-align: middle;
-    width: 200%;
+    width: 100%;
 }
 
 /*pääsivun sisällön asettelu*/
@@ -102,10 +102,10 @@ figcaption {
 }
 
 /*yritys-sivun sisällön asettelu*/
-.grid-henkilo1 { grid-area: g1-h1; }
-.grid-henkilo1-kuva { grid-area: g2-hk1; }
-.grid-henkilo2 { grid-area: g3-h2; }
-.grid-henkilo2-kuva { grid-area: g4-hk2; }
+.grid-tuote1 { grid-area: g1-h1; }
+.grid-tuote1-kuva { grid-area: g2-hk1; }
+.grid-tuote2 { grid-area: g3-h2; }
+.grid-tuote2-kuva { grid-area: g4-hk2; }
 
 .grid-yritys {
     display: grid;
@@ -135,8 +135,8 @@ footer{
     background-color: white;
     display: flex;
     justify-content: space-around;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 /*some ikonit*/
