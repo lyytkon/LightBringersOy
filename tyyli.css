@@ -49,8 +49,8 @@ header{
 h1 {
     font-family: otsikko, "sans serif";
     font-size: 35px;
-    color: whitesmoke;
-    text-shadow: 4px 4px black;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px rgb(0, 0, 0);
     text-align: center;
     padding-top: 30px;
 }
