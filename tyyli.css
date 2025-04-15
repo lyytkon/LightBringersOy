@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 body {
     color: darkslategray;
     background-color: rgba(175, 148, 148, 0.305);
@@ -10,6 +13,25 @@ header{
     text-align: center;
     padding-top: 30px;
 }
+.nuoli {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 30px;
+    color: whitesmoke;
+    text-decoration: none;
+    animation: hyppy 1.5s infinite;
+}
+
+@keyframes hyppy {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+    100% { transform: translateY(0); }
+}
+
+.nuoli:hover {
+    opacity: 0.7;
+}
+
 
 .alisivu-sisalto {
     background-color: rgb(255, 248, 239);
@@ -78,10 +100,10 @@ figure {
     max-width: 300px;
 }
 figcaption {
-    background-color: darkslategray;
+    background-color: rgb(18, 9, 34);
     color: white;
     font-style: italic;
-    padding: 8px;
+    padding: 3px;
     text-align: center;
 }
 .kuva {
@@ -101,7 +123,7 @@ figcaption {
     padding: 20px;
 }
 
-/*yritys-sivun sisällön asettelu*/
+/*tuotteet-sivun sisällön asettelu*/
 .grid-tuote1 { grid-area: g1-h1; }
 .grid-tuote1-kuva { grid-area: g2-hk1; }
 .grid-tuote2 { grid-area: g3-h2; }
@@ -324,7 +346,7 @@ footer{
     #slogan {
         font-size: 65px;
         padding-top: 150px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
         padding-left: 200px;
         padding-right: 200px;
     }
