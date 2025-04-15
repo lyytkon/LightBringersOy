@@ -20,12 +20,12 @@ header{
     justify-content: space-around;
     padding: 0px;
 }
-/*Nuoli*/
+/* Etusivun Nuoli*/
 .nuoli {
     display: inline-block;
     margin-top: 20px;
     font-size: 30px;
-    color: whitesmoke;
+    color: rgb(18, 9, 34);
     text-decoration: none;
     animation: hyppy 1.5s infinite;
 }
@@ -92,6 +92,12 @@ nav a:hover {
     margin: 4px 2px;
     cursor: pointer;
 }
+.toimintakehote:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+
 
 /*kuvat*/
 figure {
