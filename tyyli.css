@@ -42,20 +42,19 @@ header{
 
 
 /*fontit*/
-@font-face {
-    font-family: otsikko;
-    src: url(fontti/FredokaOne-Regular.ttf);
+body {
+    font-family: 'Poppins';
 }
 h1 {
-    font-family: otsikko, "sans serif";
+    font-family: 'Montserrat', sans-serif;
     font-size: 35px;
-    color: rgb(255, 255, 255);
+    color: #DCEEFF;
     text-shadow: 2px 2px rgb(0, 0, 0);
     text-align: center;
     padding-top: 30px;
 }
 h2, h3 {
-    font-family: otsikko, "sans serif";
+    font-family: 'Montserrat', sans-serif;
 }
 .esittely {
     padding-left: 20px; 
@@ -63,16 +62,24 @@ h2, h3 {
 
 /*päävalikko*/
 nav a {
-    background: rgb(18, 9, 34);
-    font-family: otsikko, "sans serif";
+    background: #2D0F54;
+    font-family: 'Montserrat', sans-serif;
     color:whitesmoke;
     text-decoration: none;
     display: inline-block;
     border: 2px solid rgba(18, 9, 34);
 }
+nav a:first-child {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 12px 24px;
+    min-width: 180px;
+    background-color: rgba(255,255,255,0.15); /* erottuva tausta */
+  }  
 nav a:hover {
-    color: rgba(18, 9, 34);
-    background-color: whitesmoke;
+    color: #141927;
+    background-color: #00BFFF;
 }
 #valittu {
     color: rgba(18, 9, 34);
