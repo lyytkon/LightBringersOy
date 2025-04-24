@@ -20,6 +20,8 @@ header{
     justify-content: space-around;
     padding: 0px;
 }
+
+    
 /* Etusivun Nuoli*/
 .nuoli {
     display: inline-block;
@@ -165,8 +167,8 @@ th{
 
 /*alatunniste, joka sivulla sama*/
 footer{
-    font-family: otsikko, "sans serif";
-    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
     color: rgba(18, 9, 34);
     background-color: white;
     display: flex;
@@ -180,8 +182,8 @@ footer{
     padding: 10px;
     text-align: center;
     text-decoration: none;
-    background-color: rgba(18, 9, 34);
-    color:white;
+    background-color: rgb(116, 26, 26);
+    color:rgb(0, 0, 0);
 }
 .fa:hover {
     opacity: 0.6;
@@ -192,10 +194,16 @@ footer{
     #etusivu {
         background-image: url(DJTaustakuva.jpg);
         background-size: cover;
-        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh; /* koko näkymän korkeus */
     }
+
     #alisivut {
         background-image: url(DJTaustakuva.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     nav a { 
@@ -203,52 +211,64 @@ footer{
         width: 100px;
         height: 20px;
         padding: 7px;
-        margin:3px 5px;
+        margin: 3px 5px;
     }
+
     #slogan {
         font-size: 30px;
         padding: 20px;
     }
+
     .toimintakehote {
         font-size: 18px;
     }
+
     .sisalto {
-        margin: 3% 10% 3% 10%;
+        margin: 3% 10% 100px 10%; /* lisää tilaa alareunaan footeria varten */
     }
+
     .alisivu-sisalto {
-        margin: 3% 10% 3% 10%;
+        margin: 3% 10% 100px 10%;
         flex-direction: column;
     }
+
     h1 {
         font-size: 25px;
     }
-    h2{
+
+    h2 {
         font-size: 20px;
     }
+
     h3 {
         font-size: 18px;
     }
+
     .esittely {
         font-size: 18px;  
     }
+
     #paasivu {
         grid-template-areas:
             'g1'
             'g3'
             'g2';
     }
+
     #kahvimme {
         grid-template-areas:
             'g1'
             'g3'
             'g2';
     }
+
     #musamme {
         grid-template-areas:
             'g1'
             'g3'
             'g2';
     }
+
     .grid-yritys {
         grid-template-areas:
             'g1-h1'
@@ -256,9 +276,17 @@ footer{
             'g3-h2'
             'g4-hk2';
     }
-    footer{
+
+    footer {
         flex-direction: column;
         text-align: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 100;
+        padding: 10px 0;
     }
 }
 
