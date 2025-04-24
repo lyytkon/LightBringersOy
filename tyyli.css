@@ -280,8 +280,8 @@ footer{
     footer {
         flex-direction: column;
         text-align: center;
-        position: fixed;
-        bottom: 0;
+        position: flex;
+        bottom: 500;
         left: 0;
         width: 100%;
         background-color: white;
