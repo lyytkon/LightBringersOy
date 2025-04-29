@@ -316,7 +316,7 @@ footer{
     #etusivu {
         background-image: url(DJTaustakuva.jpg);
         background-size: cover;
-        height: 600px;
+        height: 100vh;
     }
     #alisivut {
         background-image: url(DJTaustakuva.jpg);
@@ -393,7 +393,7 @@ footer{
     #etusivu {
         background-image: url(DJTaustakuva.jpg);
         background-size: cover;
-        height: 500px;
+        height: 100vh;
     }
     #alisivut {
         background-image: url(DJTaustakuva.jpg);
