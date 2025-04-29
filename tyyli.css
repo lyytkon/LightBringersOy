@@ -53,17 +53,19 @@ h1 {
     color: #DCEEFF;
     text-shadow: 2px 2px rgb(0, 0, 0);
     text-align: center;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 h2, h3 {
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
+
 }
 .esittely {
     padding-left: 20px; 
 }
 
 /*päävalikko*/
-nav a {
+ nav a {
     background: #2D0F54;
     font-family: 'Montserrat', sans-serif;
     color:whitesmoke;
@@ -82,11 +84,11 @@ nav a:first-child {
 nav a:hover {
     color: #141927;
     background-color: #00BFFF;
-}
+} 
 #valittu {
     color: rgba(18, 9, 34);
     background-color:rgba(255, 235, 205, 0.6);
-}
+} 
 
 .toimintakehote {
     border: 2px solid rgba(18, 9, 34);
@@ -127,6 +129,11 @@ figcaption {
     vertical-align: middle;
     width: 100%;
 }
+.esittely-kuva{
+    max-width: 650px;
+    width: 80%;
+    padding-left: 300px;
+}
 
 /*pääsivun sisällön asettelu*/
 .grid-teksti1 { grid-area: g1; }
@@ -144,6 +151,19 @@ figcaption {
 .grid-tuote1-kuva { grid-area: g2-hk1; }
 .grid-tuote2 { grid-area: g3-h2; }
 .grid-tuote2-kuva { grid-area: g4-hk2; }
+
+/*referenssi-sivun sisällön asettelu*/
+.grid-keikka1 { grid-area: g1-h1; }
+.grid-keikka1-kuva { grid-area: g2-hk1; }
+.grid-keikka2 { grid-area: g3-h2; }
+.grid-keikka2-kuva { grid-area: g4-hk2; }
+
+/*Ytteys sivun asettelu*/
+.grid-yhteys { grid-area: g1-h1;
+font-size: 20px; }
+.grid-yhteys-kuva { grid-area: g2-hk1; }
+
+
 
 .grid-yritys {
     display: grid;
@@ -165,16 +185,17 @@ th{
     max-width: 90%;
 }
 
+
 /*alatunniste, joka sivulla sama*/
 footer{
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     color: rgba(18, 9, 34);
     background-color: white;
     display: flex;
     justify-content: space-around;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /*some ikonit*/
@@ -182,12 +203,13 @@ footer{
     padding: 10px;
     text-align: center;
     text-decoration: none;
-    background-color: rgb(116, 26, 26);
-    color:rgb(0, 0, 0);
+    background-color: rgba(18, 9, 34);
+    color: white;
 }
 .fa:hover {
     opacity: 0.6;
 }
+
 
 /*mobiilikoko*/
 @media (max-width: 600px) {
@@ -214,7 +236,7 @@ footer{
         margin: 3px 5px;
     }
 
-    #slogan {
+    .slogan {
         font-size: 30px;
         padding: 20px;
     }
@@ -280,7 +302,6 @@ footer{
     footer {
         flex-direction: column;
         text-align: center;
-        position: flex;
         bottom: 500;
         left: 0;
         width: 100%;
@@ -306,8 +327,8 @@ footer{
         height: 20px;
         padding: 7px;
         margin:3px 5px;
-    }
-    #slogan {
+    } 
+    .slogan {
         font-size: 40px;
         padding-top: 100px;
         padding-bottom: 20px;
@@ -372,7 +393,7 @@ footer{
     #etusivu {
         background-image: url(DJTaustakuva.jpg);
         background-size: cover;
-        height: 950px;
+        height: 500px;
     }
     #alisivut {
         background-image: url(DJTaustakuva.jpg);
@@ -385,9 +406,9 @@ footer{
         margin:5px 20px;
     }
     
-    #slogan {
-        font-size: 65px;
-        padding-top: 150px;
+    .slogan {
+        font-size: 80px;
+        padding-top: 50px;
         padding-bottom: 10px;
         padding-left: 200px;
         padding-right: 200px;
